@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #eee;
+}
+
+.container{             
+    position: relative;
+    display: inline-block;
+}
+
+.container img{
+    width: 100%;
+    display: block;
+}
+
+.container .btn{
+    position: absolute;
+    top:15% ;
+    left: 60%;
+    width: 300px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color:#7e848a;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container .btn:hover{
+    background-color: #cedb0e;
+    color: red;
+    font-size: 17px;
+}
+
+.container .btn1{
+    position: absolute;
+    top:35% ;
+    left: 60%;
+    width: 300px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #7e848a;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container .btn1:hover{
+    background-color: #cedb0e;
+    color: red;
+    font-size: 17px;
+}
+
+.container .btn2{
+    position: absolute;
+    top:58% ;
+    left: 60%;
+    width: 300px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #7e848a;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container .btn2:hover{
+    background-color: #cedb0e;
+    color: red;
+    font-size: 17px;
+}
+
+.container .btn3{
+    position: absolute;
+    top:75% ;
+    left: 60%;
+    width: 300px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #7e848a;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container .btn3:hover{
+    background-color: #cedb0e;
+    color: red;
+    font-size: 17px;
+}
+
+.container .btn4{
+    position: absolute;
+    top:95% ;
+    left: 60%;
+    width: 300px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #7e848a;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container .btn4:hover{
+    background-color: red;
+
+}
+
+/* Estilo padrão (desktop e telas maiores) */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #eee;
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+    width: 80%; /* Garantir que caiba em telas maiores */
+}
+
+/* Estilo para tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        width: 90%; /* Reduzir a largura */
+    }
+
+    .container .btn {
+        width: 250px; /* Botões menores */
+        font-size: 14px;
+    }
+
+    img {
+        width: 90%; /* Reduzir as imagens */
+    }
+}
+
+/* Estilo para smartphones (até 768px) */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; /* Elementos empilhados */
+    }
+
+    .container {
+        width: 100%; /* Ocupa toda a largura */
+        text-align: center; /* Centraliza os itens */
+    }
+
+    img {
+        width: 90%; /* Imagens ocupam a largura do container */
+    }
+
+    .container .btn, .container .btn1, .container .btn2, .container .btn3, .container .btn4 {
+        width: 35%; /* Botões ocupam quase toda a largura */
+        height: 5px;
+        font-size: 11px; /* Texto menor */
+        padding: 10px 20px;
+    }
+}
